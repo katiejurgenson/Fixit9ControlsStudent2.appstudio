@@ -2,21 +2,46 @@ var dessertList = ['Chocolate Cake','Creme Brulee','Cheesecake',
                   'Keylime Pie','Cherry Cobbler','Chocolate Chip Cookies']
 
 dessertVoting.onshow=function(){
-    drpDesserts.clear()   
-  /* add a loop here that adds all the desserts in the array 
-     to the dropdown.
-  */
+  // clear before populating 
+  drpDesserts.clear()
+  // loop to add desserts in dropdown 
+  for (i = 0; i <= dessertList.length - 1; i++)
+      drpDesserts.addItem(dessertList[i])
 }
 
-
-drpDesserts.onclick=function(){
-   // this 'if' kicks user out if they  just clicked on control 
- // but not on one item in the list.
+drpDesserts.onclick=function(s){
+    // this 'if' kicks user out if they just clicked on the control 
     if (typeof(s) == "object")   
       return                    
     else {  // the user picked something
-        /* add code here to get item user chose and output 
-        it in a label, using a literal.
-        */
+      drpDesserts.value = s
+      switch(s) {
+      case "Chocolate Cake":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+      case "Creme Brulee":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+      case "Cheesecake":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+      case "Keylime Pie":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+      case "Cherry Cobbler":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+      case "Chocolate Chip Cookies":
+        lblPrompt.value = `You picked ${s} -- that is a great choice!`;
+        break;
+       default: 
+        lblPrompt.value = `Error.`;
+        break; 
+      }
     }
+  }
+
+
+btnNext.onclick=function(){
+  ChangeForm(describeYou)
 }
