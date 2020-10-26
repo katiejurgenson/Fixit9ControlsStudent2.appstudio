@@ -14,36 +14,9 @@
       "!type": "External",
       "file": [
         "forms",
-        "favExercises",
+        "login",
         "Elements",
-        "selExercises.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "favExercises",
-        "Elements",
-        "btnSubmit.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "favExercises",
-        "Elements",
-        "lblCheck.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "favExercises",
-        "Elements",
-        "btnNext2.json"
+        "Label1.json"
       ]
     }
   ],
@@ -53,7 +26,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "favExercises",
+  "id": "login",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
@@ -61,13 +34,11 @@
   "onhide": "",
   "onkeypress": "",
   "onresize": "",
-  "onshow": "favExercises.onshow()",
+  "onshow": "",
   "openMode": "none",
   "parentForm": "",
   "position": "absolute",
   "script": null,
-  "scroll_options": "mouseWheel:true, bounce:true, zoom:false",
-  "scrolling": "false",
   "setFocusID": "",
   "style": "",
   "theme": "",

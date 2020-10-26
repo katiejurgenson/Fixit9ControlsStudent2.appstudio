@@ -53,6 +53,14 @@
             "mobileNav",
             "mobileNav.json"
           ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "login",
+            "login.json"
+          ]
         }
       ],
       "configxml": null,
@@ -76,7 +84,7 @@
       "exetitle": "",
       "expanded_pmp": null,
       "extraheaders": null,
-      "firstform": "dessertVoting",
+      "firstform": "describeYou",
       "fontFamily": "system",
       "height": "",
       "homescreenTitle": "",
